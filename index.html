@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIMAWAB - Sistem Informasi Manajemen Waktu Belajar</title>
+    <style>
+        /* CSS DASAR */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f7f6;
+        }
+
+        /* HEADER & NAVIGASI */
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        header h1 { margin-bottom: 5px; font-size: 1.8rem; }
+        header p { font-size: 0.9rem; opacity: 0.9; }
+
+        nav {
+            background: #34495e;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 15px;
+            font-size: 0.85rem;
+            transition: 0.3s;
+        }
+
+        nav a:hover { background: #3498db; border-radius: 5px; }
+
+        /* KONTEN UTAMA */
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        section {
+            background: white;
+            padding: 40px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        h2 {
+            color: #2980b9;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        ul { margin-left: 20px; margin-top: 10px; }
+        li { margin-bottom: 8px; }
+
+        /* KHUSUS HALAMAN BERANDA */
+        .hero { text-align: center; background: #ebf5fb; }
+        .hero h2 { border: none; font-size: 2rem; color: #2c3e50; }
+
+        /* KHUSUS REFLEKSI & KONSULTASI */
+        .form-group { margin-bottom: 15px; }
+        label { display: block; font-weight: bold; margin-bottom: 5px; }
+        input[type="text"], textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background: #27ae60;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        button:hover { background: #219150; }
+
+        .dampak-negatif {
+            background-color: #fff5f5;
+            border-left: 5px solid #e74c3c;
+            padding: 15px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.8rem;
+            color: #7f8c8d;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 600px) {
+            nav a { width: 100%; text-align: center; }
+            section { padding: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>SIMAWAB</h1>
+        <p>Sistem Informasi Manajemen Waktu Belajar</p>
+        <p><i>Media Layanan Informasi Bimbingan dan Konseling Berbasis Website</i></p>
+    </header>
+
+    <nav>
+        <a href="#beranda">Beranda</a>
+        <a href="#pengertian">Pengertian</a>
+        <a href="#pentingnya">Pentingnya</a>
+        <a href="#dampak">Dampak</a>
+        <a href="#cara">Cara Atur</a>
+        <a href="#tips">Tips</a>
+        <a href="#refleksi">Jadwal Saya</a>
+        <a href="#konsultasi">Konsultasi BK</a>
+    </nav>
+
+    <div class="container">
+
+        <!-- HALAMAN 1: BERANDA -->
+        <section id="beranda" class="hero">
+            <h2>Selamat Datang di SIMAWAB</h2>
+            <p>SIMAWAB dirancang untuk membantu siswa memahami pentingnya manajemen waktu belajar agar kegiatan belajar menjadi lebih terarah, teratur, dan dapat meningkatkan prestasi belajar.</p>
+            <div style="text-align: left; margin-top: 25px;">
+                <strong>Tujuan Website:</strong>
+                <ul>
+                    <li>Membantu siswa memahami manajemen waktu belajar.</li>
+                    <li>Meningkatkan kesadaran pentingnya pengaturan waktu belajar.</li>
+                    <li>Membantu siswa menyusun jadwal belajar mandiri.</li>
+                    <li>Mendukung layanan informasi bimbingan dan konseling di sekolah.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- HALAMAN 2: PENGERTIAN -->
+        <section id="pengertian">
+            <h2>Apa itu Manajemen Waktu Belajar?</h2>
+            <p><strong>Manajemen waktu belajar</strong> adalah kemampuan siswa dalam merencanakan, mengatur, dan memanfaatkan waktu secara efektif untuk kegiatan belajar sehingga tugas dapat diselesaikan dengan baik dan hasil belajar menjadi optimal.</p>
+            <p style="margin-top: 10px; font-style: italic; color: #7f8c8d;">Dengan manajemen waktu yang baik, siswa dapat belajar lebih teratur dan terarah.</p>
+        </section>
+
+        <!-- HALAMAN 3: PENTINGNYA -->
+        <section id="pentingnya">
+            <h2>Pentingnya Manajemen Waktu</h2>
+            <p>Mengapa siswa perlu mengatur waktu?</p>
+            <ul>
+                <li>Membantu kegiatan belajar menjadi lebih terencana.</li>
+                <li>Mengurangi kebiasaan menunda tugas.</li>
+                <li>Meningkatkan disiplin belajar.</li>
+                <li>Membantu mencapai prestasi belajar yang optimal.</li>
+                <li>Mengurangi stres akibat tugas yang menumpuk.</li>
+            </ul>
+        </section>
+
+        <!-- HALAMAN 4: DAMPAK -->
+        <section id="dampak">
+            <h2>Dampak Tidak Mengatur Waktu</h2>
+            <div class="dampak-negatif">
+                <ul>
+                    <li>Tugas sekolah menumpuk.</li>
+                    <li>Kebiasaan belajar mendadak (SKS).</li>
+                    <li>Menurunnya konsentrasi belajar.</li>
+                    <li>Meningkatnya stres akademik.</li>
+                    <li>Prestasi belajar menurun.</li>
+                </ul>
+            </div>
+            <p style="margin-top: 15px;">Karena itu, siswa perlu belajar mengelola waktu dengan baik sejak sekarang!</p>
+        </section>
+
+        <!-- HALAMAN 5: CARA MENGATUR -->
+        <section id="cara">
+            <h2>Cara Mengatur Waktu Belajar</h2>
+            <p>Langkah sederhana untuk memulai:</p>
+            <ul>
+                <li><strong>Membuat jadwal belajar harian:</strong> Tulis apa yang harus dilakukan.</li>
+                <li><strong>Menentukan prioritas tugas:</strong> Kerjakan yang paling penting dulu.</li>
+                <li><strong>Belajar secara rutin:</strong> Sedikit demi sedikit setiap hari.</li>
+                <li><strong>Kurangi penggunaan HP:</strong> Fokus tanpa gangguan media sosial.</li>
+                <li><strong>Tempat belajar nyaman:</strong> Pastikan pencahayaan dan suasana mendukung.</li>
+            </ul>
+        </section>
+
+        <!-- HALAMAN 6: TIPS EFEKTIF -->
+        <section id="tips">
+            <h2>Tips Belajar Efektif</h2>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+                <div style="background: #e8f8f5; padding: 10px; border-radius: 5px;">✅ Belajar di waktu yang sama setiap hari.</div>
+                <div style="background: #e8f8f5; padding: 10px; border-radius: 5px;">✅ Membuat target belajar yang jelas.</div>
+                <div style="background: #e8f8f5; padding: 10px; border-radius: 5px;">✅ Mengulang materi sebelum tidur.</div>
+                <div style="background: #e8f8f5; padding: 10px; border-radius: 5px;">✅ Beristirahat setelah belajar.</div>
+            </div>
+            <p style="margin-top: 15px;">Tips ini membantu meningkatkan konsentrasi dan pemahaman materi Anda.</p>
+        </section>
+
+        <!-- HALAMAN 7: REFLEKSI -->
+        <section id="refleksi">
+            <h2>Refleksi: Rencana Jadwal Saya</h2>
+            <p>Silakan isi rencana jadwal belajar kamu minggu ini:</p>
+            <div style="margin-top: 20px;">
+                <div class="form-group"><label>Senin</label><input type="text" placeholder="Contoh: Jam 19.00 Belajar Matematika"></div>
+                <div class="form-group"><label>Selasa</label><input type="text" placeholder="..."></div>
+                <div class="form-group"><label>Rabu</label><input type="text" placeholder="..."></div>
+                <div class="form-group"><label>Kamis</label><input type="text" placeholder="..."></div>
+                <div class="form-group"><label>Jumat</label><input type="text" placeholder="..."></div>
+                <button onclick="alert('Bagus! Mari mulai terapkan jadwal ini.')">Simpan Jadwal</button>
+            </div>
+        </section>
+
+        <!-- HALAMAN 8: KONSULTASI BK -->
+        <section id="konsultasi">
+            <h2>Konsultasi Guru BK</h2>
+            <p>Jika kamu mengalami kesulitan dalam mengatur waktu belajar, guru BK siap membantumu.</p>
+            <div style="margin-top: 20px; border: 1px solid #ddd; padding: 20px; border-radius: 5px;">
+                <div class="form-group"><label>Nama Lengkap</label><input type="text"></div>
+                <div class="form-group"><label>Kelas</label><input type="text"></div>
+                <div class="form-group"><label>Keluhan/Kesulitan</label><textarea rows="4"></textarea></div>
+                <button style="background: #3498db;">Kirim Form Konsultasi</button>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2023 SIMAWAB - Sistem Informasi Manajemen Waktu Belajar</p>
+    </footer>
+
+</body>
+</html>
